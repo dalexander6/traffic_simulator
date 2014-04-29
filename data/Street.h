@@ -18,15 +18,13 @@ public:
 	int getWidth() const;
 
 	void addVehicle(Vehicle* v);
+	void advance(double dt);
 
+	bool empty() const;
 
 	typedef std::vector<Vehicle*>::const_iterator const_iterator;
 	const_iterator begin() const { return vehicles.cbegin(); }
 	const_iterator end() const { return vehicles.cend(); }
-
-
-	
-
 
 
 	~Street();

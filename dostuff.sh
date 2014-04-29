@@ -3,6 +3,7 @@
 
 printf -- "\n\n*************dostuff .sh*************\n"
 
-./main.exe
+#./main.exe
+./qt_traffic_simulator
 printf "*************dostuff.sh COMPLETED******\n\n"
 exit 0

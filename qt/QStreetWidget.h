@@ -11,7 +11,7 @@ class QStreetWidget : public QWidget {
 	Q_OBJECT
 
 private:
-	const Street* street;
+	Street* street;
 	int height;
 	int width;
 
@@ -51,13 +51,16 @@ public:
 
 			std::cout << "(" << x << ", " << y << "), " << vehiclePtr->getLength() << " x " << height/2 << std::endl;
 		}
-
 		QWidget::paintEvent(e);
-		
-
 	}
 
 public slots:
+	virtual void advance() {
+		double dt = 1;
+		street->advance(dt);
+		repaint();
+	}
+
 
 };
 

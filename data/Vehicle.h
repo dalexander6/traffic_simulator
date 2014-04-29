@@ -14,7 +14,7 @@ public:
 	double getPositionFront() const;
 	double getPositionBack() const;
 	double getLength() const;
-	virtual void updatePosition(const Vehicle*& nearest, double dt) = 0;
+	virtual void advance(const Vehicle* const& nearest, double dt) = 0;
 	bool operator<(const Vehicle& other) const;
 	int getLicense() const { return licensePlate; }
 
