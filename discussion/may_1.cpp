@@ -31,7 +31,17 @@ struct isDivisibleByK{
 	}
 };
 
+int getX(int y) {
+	if (y > 0) {
+		return 1;
+	}
+	if (y < 0) {
+		return -1;
+	}
+}
+
 int main(int argc, char *argv[]) {
+	cout << getX(0) << endl;
 	vector<int> v1 = {5, 3, 7, 18, 9};
 	vector<int> v2 = {5, 8, 10, 18, 9};
 	vector<string*> v3 = {new string("c"), new string("b")};
