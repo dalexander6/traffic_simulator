@@ -1,0 +1,23 @@
+
+
+/*
+ * Swaps parameters a and b
+ * @param a the first thing to be swapped
+ * @param b the second thing to be swapped
+ */
+template <typename T>
+void swap(T& a, T& b) {
+	T c(std::move(a));
+	a = move(b);
+	b = move(c);
+}
+
+vector<int> v;
+array<int, 5> a;
+matrix<5, 7> m;
+matrix<6, 7> m2;
+
+template <int rows, int columns>
+class matrix {
+	...
+}
