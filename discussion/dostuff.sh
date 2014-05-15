@@ -5,6 +5,6 @@ printf -- "\n\n*************dostuff .sh*************\n"
 
 #./hash_map_noresize_tester.exe
 #./sort_tester.exe
-./may_13.exe
+./may_15.exe
 printf "*************dostuff.sh COMPLETED******\n\n"
 exit 0
